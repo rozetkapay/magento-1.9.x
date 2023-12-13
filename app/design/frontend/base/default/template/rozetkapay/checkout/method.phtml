@@ -1,0 +1,24 @@
+<?php
+/**
+ * Checkout. Payment method template
+ */
+$coreHelper = Mage::helper('core');
+$total = Mage::getSingleton('checkout/cart')->getQuote()->getGrandTotal();
+?>
+<ul id="payment_form_<?php echo $this->getMethodCode() ?>" style="display:none" class="form-list">
+    <li id="payparts-select-block">
+        <?php if ($this->getDescription()): ?>
+        <p class="payment-description">
+            <?php echo $this->getDescription(); ?>
+        </p>
+        <?php endif; ?>
+    </li>
+</ul>
+<style type="text/css">
+.payment-method, .payment-description {
+    text-align: left;
+}
+.payment-description {
+    margin-top: 5px;
+}
+</style>

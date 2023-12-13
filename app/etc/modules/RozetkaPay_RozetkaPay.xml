@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <RozetkaPay_RozetkaPay>
+      <active>true</active>
+      <codePool>local</codePool>
+      <depends>
+        <Mage_Sales />
+        <Mage_Payment />
+      </depends>
+    </RozetkaPay_RozetkaPay>
+  </modules>
+</config>
